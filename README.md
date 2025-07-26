@@ -4,7 +4,7 @@ Go，也作 Golang，是一种过程式静态类型编程语言，其语法与 C
 
 ## 概览
 
-- 简介
+- [简介](overview/introduction.md)
 - Hello World!
 
 ## 基本知识
