@@ -1,5 +1,8 @@
 Hello world 是所有编程语言的第一个程序。
-* golang 的文件后缀为 `.go`，字符编码 `UTF-8`
+* golang 的文件后缀为 `.go`，字符编码 `UTF-8`，创建主程序文件：
+  ```
+  vim helloworld.go
+  ```
 * 首先在程序里添加 package main：
   ```
   package main
