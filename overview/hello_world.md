@@ -39,12 +39,13 @@ func main() {
     fmt.Println("Hello, World!") 
 }
 ```
-**输出**
-```
-Hello, World!
-```
 
 **运行程序**
 ```bash
-go run first.go
+go run helloworld.go
+```
+
+**输出**
+```
+Hello, World!
 ```
