@@ -28,7 +28,9 @@ Go 语言中有两种类型的程序：**可执行程序**和**库**。可执行
 ```golang
 package main
 
-import "fmt"
+import (
+  "fmt"
+)
 
 func main() {
     fmt.Println("Hello, World!") 
