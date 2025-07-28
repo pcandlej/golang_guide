@@ -46,8 +46,81 @@ func main() {
   * 导出的标识符名称的第一个字符应为 Unicode 大写字母。
   * 标识符应该在包块中声明，或者是该包内的变量、函数、类型或方法名称。
 * 在下面的示例中，file1.go 包含一个名为 ExportedVariable 的导出变量，该变量可在同一文件中访问。它还导入了 file2 包，并从 file2.go 访问导出变量 AnotherExportedVariable。运行 go run file1.go 后，它将打印 file1.go 中 ExportedVariable 的值（“Hello, World!”）和 file2.go 中 AnotherExportedVariable 的值（“Greetings from file2!”）。这演示了 Go 中导出标识符可从其他包访问的概念。
+
+**file2.go**
+
+  ```golang
+  package file2
+  
+  // 导出变量
+  var AnotherExportedVariable = "Greetings from file2!"
   ```
+
+**file1.go**
+
+  ```golang
+  // file1.go
+  
+  package main
+  
+  import (
+      "fmt"
+      "github.com/yourusername/project/file2"
+  )
+  
+  // 导出变量
+  var ExportedVariable = "Hello, World!"
+  
+  func main() {
+      // Accessing exported identifier in the same file
+      fmt.Println(ExportedVariable)
+  
+      // Accessing exported identifier from another package
+      fmt.Println(file2.AnotherExportedVariable)
+  }
   ```
+
+**输出**
+
+```
+Hello, World!
+Greetings from file2!
+```
+
+* **标识符的唯一性**
+  * 在当前作用域（如一个文件/包）中，每个标识符的名字**必须**独一无二
+  * 同时，首字母小写的标识符**不会**暴露给**外部包**
+
+  >
+  > ❗注意：相同包（package）内的文件是**可以**访问各自的私有标识符的
+  > 
+  >   所有同包文件共享同一个包作用域，编译器将同包所有文件合并处理
+  > 
+  >   因此相同包内也**不能**定义重复的私有标识符
+  >
+
+```
+package main
+
+import "fmt"
+
+// ✅ 导出标识符：首字母大写（外部包可访问）
+func PublicFunc() {
+    fmt.Println("我是导出的函数")
+}
+
+// ❗ 私有标识符：首字母小写（仅本包可用）
+func privateFunc() {
+    fmt.Println("我是私有函数")
+}
+
+var globalVar int // 私有变量（首字母小写），本包唯一，仅本包程序可以访问
+
+func main() {
+    var localVar int  // ✅ 局部变量（仅在main函数内唯一）
+    fmt.Println(localVar)
+}
+```
 
 
 
