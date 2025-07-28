@@ -11,7 +11,7 @@ Go，也作 Golang，是一种过程式静态类型编程语言，其语法与 C
 
 - [标识符](fundamentals/identifiers.md)
 - [关键词](fundamentals/keywords.md)
-- 数据类型
+- [数据类型](fundamentals/data_type.md)
 - 变量
 - 常量
 - Rune
