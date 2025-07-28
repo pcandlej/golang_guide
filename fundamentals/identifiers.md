@@ -41,6 +41,7 @@ func main() {
   make, len, cap, new, append, copy, close, 
   delete, complex, real, imag, panic, recover
   ```
+  * [预声明标识符为什么不是保留的？一般会有人用预声明标识符作为变量常量函数来使用吗？](identifiers_ex.md)
 * 下划线字符 (_) 称为空白标识符。它用作**匿名占位符**，而不是常规标识符，在声明、操作数和赋值中具有特殊含义。
 * 允许从其他包访问的标识符称为**导出标识符**。导出标识符满足以下条件：
   * 导出的标识符名称的第一个字符应为 Unicode 大写字母。
