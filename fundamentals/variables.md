@@ -119,7 +119,7 @@ func main() {
    - `Name` 和 `name` 是不同的变量
 
 4. **关键字禁用**：
-   - 禁止使用25个Go关键字（如var, func, if等）参考条目[关键字](fundamentals/keywords.md)
+   - 禁止使用25个Go关键字（如var, func, if等）参考条目[关键字](./keywords.md)
 
 5. **命名风格**：
    - 驼峰式命名（`totalCount`）
