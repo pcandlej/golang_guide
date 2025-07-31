@@ -162,7 +162,23 @@ false
 
 **布尔常量：** 布尔常量与字符串常量类似，遵循与字符串常量相同的规则，不同之处仅在于它有两个无类型常量 true 和 false。
 
+```go
+package main
 
+import "fmt"
+
+func main() {
+	const EVN_DEBUG = true
+
+	type DEBUG bool
+
+	var customDebug DEBUG = EVN_DEBUG // 既可以申明类型
+	var defaultDebug = EVN_DEBUG      // 也可以不申明类型
+
+	fmt.Println(customDebug)
+	fmt.Println(defaultDebug)
+}
+```
 
 
 
