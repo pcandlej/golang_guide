@@ -180,5 +180,49 @@ func main() {
 }
 ```
 
+const 语句可以出现在有 var 的地方，因此可以执行没有任何固定精度的算术运算。
 
+```go
+package main
+
+import (
+	"fmt"
+	"math"
+)
+
+const s string = "Hello, World!"
+
+func main() {
+	fmt.Println(s)
+
+	const n = 5
+	const d = 2e10 / n
+
+	fmt.Println(d)
+	fmt.Println(int64(d))
+	fmt.Println(math.Sin(n))
+}
+```
+
+**输出**
+
+```
+Hello, World!
+4e+09
+4000000000
+-0.9589242746631385
+```
+
+时间复杂度：O(1)
+空间复杂度：O(1)
+
+* 需要同时申明多个常量可以进行如下的书写方式
+
+```go
+const (
+	SUCCESS = "success"
+	PASS    = true
+	Pi      = 3.14
+)
+```
 
