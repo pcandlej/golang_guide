@@ -104,3 +104,65 @@ const typedFloatingPoint float64 = 123.45
 210f          /* 非法: 没有小数或指数 */
 .e55          /* 非法: 缺少整数或分数 */
 ```
+
+**字符串字面量**
+
+Go语言支持两种字符串字面量：
+* 双引号风格 " "
+* 反引号风格 \` \`
+
+特性说明：
+* 字符串可通过 `+` 和 `+=` 运算符进行拼接
+* 字符串包含三类字符（与字符字面量相同）：
+    * 普通字符
+    * 转义序列（如 `\n`）
+    * Unicode通用字符（字符串字面量本质是无类型值）
+* 字符串类型的零值为空字符串，字面量可表示为 "" 或 \`\`
+* 字符串支持通过 ==、!= 等运算符进行比较
+
+**句法**
+```
+// _string 结构体：表示一个字符串值
+// 这是 Go 语言内部表示字符串的方式（非公开实现）
+type _string struct {
+    elements *byte // 指向字符串底层字节数组的指针，因此空间复杂度为O(1)
+    len      int   // 字符串的字节长度（注意：不是字符数量，UTF-8 编码下可能不同）得益于此，取字符串的长度的时间复杂度为O(1)
+}
+```
+
+**举例**
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	const A = "Hello"
+
+	var B = "World"
+
+	var helloWorld = A + " " + B
+	helloWorld += "!"
+
+	fmt.Println(helloWorld)
+	fmt.Println(A == "Hello")
+	fmt.Println(B < A)
+}
+
+```
+
+**输出**
+
+```
+Hello World!
+true
+false
+```
+
+**布尔常量：** 布尔常量与字符串常量类似，遵循与字符串常量相同的规则，不同之处仅在于它有两个无类型常量 true 和 false。
+
+
+
+
+
