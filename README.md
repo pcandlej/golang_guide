@@ -13,7 +13,7 @@ Go，也作 Golang，是一种过程式静态类型编程语言，其语法与 C
 - [关键词](fundamentals/keywords.md)
 - [数据类型](fundamentals/data_type.md)
 - [变量](fundamentals/variables.md)
-- 常量
+- [常量](fundamentals/constants.md)
 - Rune
 - 运算符
 - 变量的作用域
