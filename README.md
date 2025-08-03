@@ -20,7 +20,7 @@ Go，也作 Golang，是一种过程式静态类型编程语言，其语法与 C
 - [类型转换](fundamentals/type_casting.md)
 - [var 关键字](fundamentals/short_variable_declaration.md)
 - [短声明运算符 :=](fundamentals/short_variable_declaration.md)
-- var 关键字 vs 短声明运算符
+- [var 关键字 vs 短声明运算符](fundamentals/var_vs_short.md)
 
 ## 控制语句
 
