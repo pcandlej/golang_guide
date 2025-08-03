@@ -25,8 +25,8 @@ func main()
 **输出**
 ```
 Hello golang
-PI is 3.14
-Have a nice day?? true
+PI is  3.14
+Have a nice day? true
 ```
 
 ## 非类型化和类型化的数字常量
