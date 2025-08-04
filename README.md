@@ -24,7 +24,7 @@ Go，也作 Golang，是一种过程式静态类型编程语言，其语法与 C
 
 ## 控制语句
 
-- 判断语句
+- [判断语句](control/decision.md)
 - 循环
 - 循环控制
 - Switch
