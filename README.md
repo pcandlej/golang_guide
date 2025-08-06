@@ -27,5 +27,14 @@ Go，也作 Golang，是一种过程式静态类型编程语言，其语法与 C
 - [判断语句](control/decision.md)
 - [循环](control/loop.md)
 - [循环控制](control/loop_control.md)
-- Switch
-- Select 语句中的死锁和 Default Case
+- [Switch 语句](control/switch.md)
+- [Select 语句中的死锁和 Default Case](control/deadlock_default_case_in_select.md)
+
+## 并发
+
+- [协程 Goroutine](concurrency/goroutine.md)
+- [Select 语句](concurrency/select.md)
+- [多协程](concurrency/multi_goroutine.md)
+- [Goroutine vs 线程](concurrency/goroutine_vs_thread.md)
+- [Channel](concurrency/channel.md)
+- [单向 Channel](concurrency/channel_direction.md)
