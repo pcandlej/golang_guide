@@ -38,3 +38,10 @@ Go，也作 Golang，是一种过程式静态类型编程语言，其语法与 C
 - [Goroutine vs 线程](concurrency/goroutine_vs_thread.md)
 - [Channel](concurrency/channel.md)
 - [单向 Channel](concurrency/channel_direction.md)
+
+## 接口
+
+- [接口](interface/interface.md)
+- [多接口](interface/multi_interface.md)
+- [嵌入接口](interface/embedding_interface.md)
+- [使用接口的多态性](interface/polymorphism.md)
