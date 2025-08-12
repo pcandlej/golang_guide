@@ -113,7 +113,7 @@ import "fmt"
 
 // 子协程：向通道发送数据后关闭
 func sendData(ch chan string) {
-    data := []string{"GFG", "gfg", "Geeks", "GeeksforGeeks"}
+    data := []string{"Item1", "Item2", "Item3", "Item4"}
     for _, s := range data {
         ch <- s
     }
