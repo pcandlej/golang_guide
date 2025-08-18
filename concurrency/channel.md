@@ -132,10 +132,10 @@ func main() {
 ```
 **输出结果**：
 ```
-GFG
-gfg
-Geeks
-GeeksforGeeks
+Item1
+Item2
+Item3
+Item4
 ```
 
 
