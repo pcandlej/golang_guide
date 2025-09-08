@@ -22,6 +22,14 @@ Go，也作 Golang，是一种过程式静态类型编程语言，其语法与 C
 - [短声明运算符 :=](fundamentals/short_variable_declaration.md)
 - [var 关键字 vs 短声明运算符](fundamentals/var_vs_short.md)
 
+## 数组与切片
+
+- [数组](array/array.md)
+- [复制数组](array/copy_array.md)
+- [函数的数组参数](array/array_as_function_parameter.md)
+- [切片](array/slice.md)
+- [切片复合字面量](array/slice_composite_literal.md)
+
 ## 控制语句
 
 - [判断语句](control/decision.md)
