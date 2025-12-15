@@ -29,6 +29,14 @@ Go，也作 Golang，是一种过程式静态类型编程语言，其语法与 C
 - [函数的数组参数](array/array_as_function_parameter.md)
 - [切片](array/slice.md)
 - [切片复合字面量](array/slice_composite_literal.md)
+- [复制切片](array/copy_slice.md)
+- [切片传参](array/slice_as_function_parameter.md)
+- [比较切片](array/compare_slice.md)
+- [判断切片相等](array/equality_of_slice.md)
+- [切片排序](array/sort_slice.md)
+- [分割切片](array/splitting.md)
+- [剪切切片](array/trimming_slice.md)
+- [分割切片](array/splitting_slice.md)
 
 ## 控制语句
 
