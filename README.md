@@ -36,7 +36,7 @@ Go，也作 Golang，是一种过程式静态类型编程语言，其语法与 C
 - [切片排序](array/sort_slice.md)
 - [分割切片](array/splitting.md)
 - [剪切切片](array/trimming_slice.md)
-- [分割切片](array/splitting_slice.md)
+- [分割字节切片](array/splitting_slice.md)
 
 ## 控制语句
 
