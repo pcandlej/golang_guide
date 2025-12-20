@@ -24,6 +24,7 @@ Go，也作 Golang，是一种过程式静态类型编程语言，其语法与 C
 
 ## 函数及方法
 - [可变参数函数](functions/variadic.md)
+- [匿名函数](functions/anonymous.md)
 
 ## 数组与切片
 
